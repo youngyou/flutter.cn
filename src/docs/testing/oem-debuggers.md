@@ -8,7 +8,11 @@ description: 如何连接各开发平台的调试器调试 Flutter 应用，比�
 ---
 
 {{site.alert.tip}}
+
   This doc is not yet complete. The iOS instructions are in process.
+
+  该文档暂未完成。IOS 的相关说明正在编写中。
+
 {{site.alert.end}}
 
 If you are exclusively writing Flutter apps with Dart code and not using
@@ -16,22 +20,37 @@ platform-specific libraries, or otherwise accessing platform-specific
 features, you can debug your code using your IDE's debugger.
 Only the first section of this guide, Debugging Dart code, is relevant for you.
 
+如果你只使用 Dart 语言开发 Flutter 应用，并且不使用特定于平台的的库或者功能，你可以使用 IDE 的调试器调试你的代码。
+只有这篇指南的第一部分 Debugging Dart code 对你有用。
+
 If you're writing a platform-specific plugin or using platform-specific
 libraries written in Swift, ObjectiveC, Java, or Kotlin, you can debug
 that portion of your code using Xcode (for iOS) or Android Gradle (for Android).
 This guide shows you how you can connect _two_ debuggers to your Dart app,
 one for Dart, and one for the OEM code.
 
+如果你正在开发特定于平台的的插件或者使用由 Swift，ObjectiveC，Java 或 Kotlin 语言编写的特定于平台的库，
+你可以使用 Xcode（用于 iOS）或者 Android Gradle（用于 Android）调试这部分代码。
+本指南介绍如何将用于 Dart 和用于 OEM 代码的 *两个* 调试器连接到你的 Dart 应用。
+
 ## Debugging Dart code
+
+## 调试 Dart 代码
 
 Use your IDE for standard Dart debugging. These instructions describe Android
 Studio, but you can use your preferred IDE with the Flutter and Dart
 plugins installed and configured.
 
+你可以使用 IDE 进行一般的 Dart 调试。以下内容针对 Android Studio 进行说明，但你也可以使用你喜欢的安装并配置好 Flutter 和 Dart 插件的编辑器来进行调试。
+
 {{site.alert.tip}}
+
   Connect to a physical device when debugging, rather than an emulator or
   simulator, which don't support profile mode. For more information, see
   [Flutter's modes]({{site.github}}/flutter/flutter/wiki/Flutter's-modes).
+
+  
+
 {{site.alert.end}}
 
 ### Dart debugger
