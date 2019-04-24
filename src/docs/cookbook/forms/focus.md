@@ -1,6 +1,14 @@
 ---
 title: Focus on a Text Field
 title: Text Field 上的焦点
+prev:
+  title: Create and style a text field
+  title: 文本框的创建和设定
+  path: /docs/cookbook/forms/text-input
+next:
+  title: Handling changes to a text field
+  title: 响应文本框内容的更改
+  path: /docs/cookbook/forms/text-field-changes
 ---
 
 When a text field is selected and accepting input, it is said to have "focus."
@@ -46,12 +54,13 @@ to focus a specific text field in response to an api call or a validation error.
 
 ### 1. Create a `FocusNode`
 
-First, we'll need to create a [`FocusNode`](https://docs.flutter.io/flutter/widgets/FocusNode-class.html).
+First, we'll need to create a
+[`FocusNode`]({{site.api}}/flutter/widgets/FocusNode-class.html).
 We will use the `FocusNode` to identify a specific `TextField` in Flutter's
 "focus tree." This will allow us to focus the `TextField` in the next steps.
 
 Since focus nodes are long-lived objects, we need to manage the lifecycle
-using a `State`class. To do so, create the `FocusNode` instance inside the
+using a `State` class. To do so, create the `FocusNode` instance inside the
 `initState` method of a `State` class, and clean them up inside the `dispose`
 method.
 
@@ -114,7 +123,8 @@ class _MyCustomFormState extends State<MyCustomForm> {
 ### 3. Focus the `TextField` when a button is tapped
 
 Finally, we'll want to focus the text field when the user taps a floating
-action button! We'll use the [`requestFocus`](https://docs.flutter.io/flutter/widgets/FocusScopeNode/requestFocus.html)
+action button! We'll use the
+[`requestFocus`]({{site.api}}/flutter/widgets/FocusScopeNode/requestFocus.html)
 method to achieve this task.
 
 <!-- skip -->

@@ -1,6 +1,14 @@
 ---
 title: Retrieve the value of a text field
 title: 获取文本框的输入值
+prev:
+  title: Handling changes to a text field
+  title: 响应文本框内容的更改
+  path: /docs/cookbook/forms/text-field-changes
+next:
+  title: Adding Material Touch Ripples
+  title: 添加点按涟漪效果 (Material Design)
+  path: /docs/cookbook/gestures/ripples
 ---
 
 In this recipe, we'll see how to retrieve the text a user has typed into a text
@@ -15,7 +23,8 @@ field.
 ## 1. Create a `TextEditingController`
 
 In order to retrieve the text a user has typed into a text field, we need to
-create a  [`TextEditingController`](https://docs.flutter.io/flutter/widgets/TextEditingController-class.html).
+create a
+[`TextEditingController`]({{site.api}}/flutter/widgets/TextEditingController-class.html).
 We will then supply the `TextEditingController` to a `TextField` in the next
 steps.
 
@@ -71,7 +80,8 @@ TextField(
 ## 3. Display the current value of the text field
 
 After we've supplied the `TextEditingController` to our text field, we can begin
-reading values! We will use the [`text`](https://docs.flutter.io/flutter/widgets/TextEditingController/text.html)
+reading values! We will use the
+[`text`]({{site.api}}/flutter/widgets/TextEditingController/text.html)
 method provided by the `TextEditingController` to retrieve the String of text
 the user has typed into the text field.
 

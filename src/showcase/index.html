@@ -49,7 +49,8 @@ body_class: landing-page showcase
                 <p>
                 Flutter is used by Google and developers and organizations around the world to deliver beautiful native apps on
                 iOS and Android. Here's a small selection of apps made with Flutter. Also see the
-                <a href="https://youtu.be/REJDzio_h7o">Flutter App Highlight Reel</a>.
+                <a href="#" data-video="REJDzio_h7o"
+                    data-toggle="modal" data-target="#videoModal">Flutter App Highlight Reel</a>.
                 </p>
             </div>
         </div>
@@ -77,8 +78,8 @@ body_class: landing-page showcase
                                         Download
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton{{ forloop.index }}">
-                                        {% if case.play_store_link %}<a class="dropdown-item" href="{{ case.play_store_link }}" target="_blank">Android</a>{% endif %}
-                                        {% if case.app_store_link %}<a class="dropdown-item" href="{{ case.app_store_link }}" target="_blank">iOS</a>{% endif %}
+                                        {% if case.play_store_link %}<a class="dropdown-item" href="{{ case.play_store_link }}" target="_blank" rel="noopener">Android</a>{% endif %}
+                                        {% if case.app_store_link %}<a class="dropdown-item" href="{{ case.app_store_link }}" target="_blank" rel="noopener">iOS</a>{% endif %}
                                     </div>
                                 </span>
                             {% endif %}
@@ -91,7 +92,7 @@ body_class: landing-page showcase
 
         <div class="row">
             <div class="col-12 text-center">
-                <a class="landing-page__cta__button btn btn-primary" href="https://itsallwidgets.com/" target="_blank">Explore more apps built with Flutter</a>
+                <a class="landing-page__cta__button btn btn-primary" href="https://itsallwidgets.com/" target="_blank" rel="noopener">Explore more apps built with Flutter</a>
             </div>
         </div>
     </div>

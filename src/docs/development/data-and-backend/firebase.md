@@ -1,6 +1,8 @@
 ---
 title: Firebase
+title: 使用 Firestore 调用 Firebase 服务
 description: How to use Firebase and Firestore with Flutter.
+description: 如何使用 Firestore 调用 Firebase 服务。
 ---
 
 Firebase is a Backend-as-a-Service (BaaS) app development platform
@@ -11,18 +13,17 @@ remote configuration, and hosting for your static files.
 Firebase supports Flutter. For more information, see:
 
 * [Getting started with Firebase and
-   Flutter](https://firebase.google.com/docs/flutter/setup)
-   in the [Firebase docs](https://firebase.google.com/docs)
-* [Firebase for Flutter
-   codelab](https://codelabs.developers.google.com/codelabs/flutter-firebase)
+   Flutter]({{site.firebase}}/docs/flutter/setup)
+   in the [Firebase docs]({{site.firebase}}/docs)
+* [Firebase for Flutter codelab]({{site.codelabs}}/codelabs/flutter-firebase)
 * [FlutterFire
-  plugins](https://github.com/flutter/plugins/blob/master/FlutterFire.md)
+  plugins]({{site.github}}/flutter/plugins/blob/master/FlutterFire.md)
 * [Using Firestore as a backend to your Flutter
-   app](https://youtu.be/DqJ_KjFzL9I) (video)
+   app](https://www.youtube.com/watch?v=DqJ_KjFzL9I&t=38s) (video)
 
 Also, the Flutter community has created docs that you might find useful:
 
 * [Authenticating users with Firebase and
    Flutter](https://flutterdoc.com/mobileauthenticating-users-with-firebase-and-flutter-240c5557ac7f)
 * [Building chat app with Flutter and
-   Firebase](https://medium.com/flutter-community/building-a-chat-app-with-flutter-and-firebase-from-scratch-9eaa7f41782e)
+   Firebase]({{site.medium}}/flutter-community/building-a-chat-app-with-flutter-and-firebase-from-scratch-9eaa7f41782e)

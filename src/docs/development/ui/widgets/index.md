@@ -1,6 +1,8 @@
 ---
 title: Widget catalog
+title: 核心 Widget 目录
 short-title: Widgets
+short-title: 核心 Widgets
 toc: false
 ---
 
@@ -9,7 +11,8 @@ platform, and interactive widgets. In addition to browsing widgets by category,
 you can also see all the widgets in the [widget index](/docs/reference/widgets).
 
 <div class="card-deck card-deck--responsive">
-{% for section in site.data.catalog.index %}
+{% assign categories = site.data.catalog.index | sort: 'name' -%}
+{% for section in categories %}
     <div class="card">
         <div class="card-body">
             <a href="{{page.url}}{{section.id}}"><header class="card-title">{{section.name}}</header></a>

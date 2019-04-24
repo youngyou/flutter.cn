@@ -1,5 +1,6 @@
 ---
 title: Creating Useful Bug Reports
+title: 如何有效提出 Bug
 ---
 
 The instructions in this document detail the current steps required to provide the most
@@ -7,14 +8,14 @@ actionable bug reports for crashes and other bad behavior. Each step is optional
 will greatly improve how quickly issues are diagnosed and addressed. We appreciate your
 effort in sending us as much feedback as possible.
 
-## Create an Issue on Github
+## Create an Issue on GitHub
 
-* A new Github issue may be created at
- [https://github.com/flutter/flutter/issues/new](https://github.com/flutter/flutter/issues/new)
+* A new issue may be created in the [Flutter
+  repo]({{site.github}}/flutter/flutter/issues/new/choose) on GitHub.
 
 ## Provide some Flutter Diagnostics
 
-* Run `flutter doctor` in your project directory and paste the results into the Github Issue:
+* Run `flutter doctor` in your project directory and paste the results into the GitHub Issue:
 
 ```
 [✓] Flutter (on Mac OS, channel master)
@@ -40,7 +41,7 @@ effort in sending us as much feedback as possible.
 Follow these steps only if your issue is related to the `flutter` tool.
 
 * All Flutter commands accept the `--verbose` flag. If attached to the issue, the output from this command may aid in diagnosing the issue.
-* Attach the results of the command to the Github issue.
+* Attach the results of the command to the GitHub issue.
 ![flutter verbose](/images/verbose_flag.png)
 
 ## Provide the Most Recent Logs
@@ -54,5 +55,5 @@ Follow these steps only if your issue is related to the `flutter` tool.
 
 * In case the iOS simulator crashes, a crash report is generated in `~/Library/Logs/DiagnosticReports/`.
 * In case the iOS device crashes, a crash report is generated in `~/Library/Logs/CrashReporter/MobileDevice`.
-* Find the report corresponding to the crash (usually the latest) and attach it to the Github issue.
+* Find the report corresponding to the crash (usually the latest) and attach it to the GitHub issue.
 ![crash report](/images/crash_reports.png)

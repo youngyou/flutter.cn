@@ -1,5 +1,14 @@
 ---
 title: Return data from a screen
+title: 从一个页面回传数据
+prev:
+  title: Pass arguments to a named route
+  title: 给特定的 route 传参
+  path: /docs/cookbook/navigation/navigate-with-arguments
+next:
+  title: Send data to a new screen
+  title: 传递数据到新页面
+  path: /docs/cookbook/navigation/passing-data
 ---
 
 In some cases, we might want to return data from a new screen. For example, say
@@ -7,7 +16,8 @@ we push a new screen that presents two options to a user. When the user taps on
 an option, we'll want to inform our first screen of the user's selection so it
 can act on that information!
 
-How can we achieve this? Using [`Navigator.pop`](https://docs.flutter.io/flutter/widgets/Navigator/pop.html)!
+How can we achieve this? Using
+[`Navigator.pop`]({{site.api}}/flutter/widgets/Navigator/pop.html)!
 
 ## Directions
 
@@ -123,7 +133,7 @@ class SelectionScreen extends StatelessWidget {
 
 Now, we'll want to update the `onPressed` callback for both of our buttons! In
 order to return data to the first screen, we'll need to use the
-[`Navigator.pop`](https://docs.flutter.io/flutter/widgets/Navigator/pop.html)
+[`Navigator.pop`]({{site.api}}/flutter/widgets/Navigator/pop.html)
 method.
 
 `Navigator.pop` accepts an optional second argument called `result`. If we
